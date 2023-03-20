@@ -21,7 +21,7 @@ def init_session_keys(key_value_pairs: dict[str, Any]) -> None:
     ----------
         key_value_pairs:dict[str, Any]
             A dictionairy of key_value_pairs
-    """
+    """  # noqa
     for key, value in key_value_pairs.items():
         if key not in st.session_state:
             st.session_state[key] = value
@@ -35,7 +35,7 @@ def change_in_session_state(key_value_pairs: dict[str, Any]):
     ----------
         key_value_pairs:dict[str, Any]
             Dictionairy with the Streamlit session_state key and the its new value
-    """
+    """  # noqa
     for key, value in key_value_pairs.items():
         st.session_state[key] = value
 
@@ -56,7 +56,7 @@ def set_selectbox_index(
             Set the session state variable name
         values:list[Any]
             The list of values in the selectbox
-    """
+    """  # noqa
     st.session_state[session_state_var_name] = values.index(
         st.session_state[selectbox_key]
     )

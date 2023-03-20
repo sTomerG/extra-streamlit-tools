@@ -26,9 +26,9 @@ def series_to_value(series_value: pd.Series) -> Any:
 
     >>> series_to_value(pd.Series([1, 2]))
     ValueError: Found more than one row
-    """
+    """  # noqa
     if len(series_value) > 1:
-        raise ValueError(f"Found more than one row")
+        raise ValueError("Found more than one row")
 
     value = series_value.values[0]
 
@@ -77,10 +77,11 @@ def get_unique_sorted_values(
 
     >>> get_unique_sorted_values(df, 'col2', astype=float)
     [1.0, 2.0, 3.0]
-    """
+    """  # noqa
     unique_sorted_values = sorted(df[column].astype(astype).unique().tolist())
     logger.debug(
-        f"{len(unique_sorted_values)} unique values found for column: '{column}'"
+        f"{len(unique_sorted_values)} unique values "
+        "found for column: '{column}'"  #
     )
     return unique_sorted_values
 
@@ -120,7 +121,7 @@ def get_values_based_on_other_value(
 
     >>> get_values_based_on_other_value(df, 'B', 6, 'C')
     ['c']
-    """
+    """  # noqa
     return sorted(
         df.loc[lambda d: d[based_column] == based_value, new_values_column]
         .unique()
@@ -155,5 +156,5 @@ def get_concat_columns(df: pd.DataFrame, columns, join_with: str) -> list[str]:
 
     >>> get_concat_columns(df, ['A', 'C'], '.')
     ['1.a', '2.b', '3.c']
-    """
+    """  # noqa
     return df[columns].astype(str).agg(join_with.join, axis=1).tolist()
