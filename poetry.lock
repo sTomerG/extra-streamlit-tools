@@ -459,30 +459,29 @@ test = ["pytest"]
 
 [[package]]
 name = "debugpy"
-version = "1.6.2"
+version = "1.6.6"
 description = "An implementation of the Debug Adapter Protocol for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "debugpy-1.6.2-cp310-cp310-macosx_10_15_universal2.whl", hash = "sha256:77a47d596ce8c69673d5f0c9876a80cb5a6cbc964f3b31b2d44683c7c01b6634"},
-    {file = "debugpy-1.6.2-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:726e5cc0ed5bc63e821dc371d88ddae5cba85e2ad207bf5fefc808b29421cb4c"},
-    {file = "debugpy-1.6.2-cp310-cp310-win32.whl", hash = "sha256:9809bd1cdc0026fab711e280e0cb5d8f89ae5f4f74701aba5bda9a20a6afb567"},
-    {file = "debugpy-1.6.2-cp310-cp310-win_amd64.whl", hash = "sha256:40741d4bbf59baca1e97a5123514afcc036423caae5f24db23a865c0b4167c34"},
-    {file = "debugpy-1.6.2-cp37-cp37m-macosx_10_15_x86_64.whl", hash = "sha256:67749e972213c395647a8798cc8377646e581e1fe97d0b1b7607e6b112ae4511"},
-    {file = "debugpy-1.6.2-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:4e3c43d650a1e5fa7110af380fb59061bcba1e7348c00237e7473c55ae499b96"},
-    {file = "debugpy-1.6.2-cp37-cp37m-win32.whl", hash = "sha256:9e572c2ac3dd93f3f1a038a9226e7cc0d7326b8d345c9b9ce6fbf9cb9822e314"},
-    {file = "debugpy-1.6.2-cp37-cp37m-win_amd64.whl", hash = "sha256:ac5d9e625d291a041ff3eaf65bdb816eb79a5b204cf9f1ffaf9617c0eadf96fa"},
-    {file = "debugpy-1.6.2-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:9f72435bc9a2026a35a41221beff853dd4b6b17567ba9b9d349ee9512eb71ce6"},
-    {file = "debugpy-1.6.2-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:aaf579de5ecd02634d601d7cf5b6baae5f5bab89a55ef78e0904d766ef477729"},
-    {file = "debugpy-1.6.2-cp38-cp38-win32.whl", hash = "sha256:0984086a670f46c75b5046b39a55f34e4120bee78928ac4c3c7f1c7b8be1d8be"},
-    {file = "debugpy-1.6.2-cp38-cp38-win_amd64.whl", hash = "sha256:19337bb8ff87da2535ac00ea3877ceaf40ff3c681421d1a96ab4d67dad031a16"},
-    {file = "debugpy-1.6.2-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:163f282287ce68b00a51e9dcd7ad461ef288d740dcb3a2f22c01c62f31b62696"},
-    {file = "debugpy-1.6.2-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:4909bb2f8e5c8fe33d6ec5b7764100b494289252ebe94ec7838b30467435f1cb"},
-    {file = "debugpy-1.6.2-cp39-cp39-win32.whl", hash = "sha256:3b4657d3cd20aa454b62a70040524d3e785efc9a8488d16cd0e6caeb7b2a3f07"},
-    {file = "debugpy-1.6.2-cp39-cp39-win_amd64.whl", hash = "sha256:79d9ac34542b830a7954ab111ad8a4c790f1f836b895d03223aea4216b739208"},
-    {file = "debugpy-1.6.2-py2.py3-none-any.whl", hash = "sha256:0bfdcf261f97a603d7ef7ab6972cdf7136201fde93d19bf3f917d0d2e43a5694"},
-    {file = "debugpy-1.6.2.zip", hash = "sha256:e6047272e97a11aa6898138c1c88c8cf61838deeb2a4f0a74e63bb567f8dafc6"},
+    {file = "debugpy-1.6.6-cp310-cp310-macosx_11_0_x86_64.whl", hash = "sha256:0ea1011e94416e90fb3598cc3ef5e08b0a4dd6ce6b9b33ccd436c1dffc8cd664"},
+    {file = "debugpy-1.6.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:dff595686178b0e75580c24d316aa45a8f4d56e2418063865c114eef651a982e"},
+    {file = "debugpy-1.6.6-cp310-cp310-win32.whl", hash = "sha256:87755e173fcf2ec45f584bb9d61aa7686bb665d861b81faa366d59808bbd3494"},
+    {file = "debugpy-1.6.6-cp310-cp310-win_amd64.whl", hash = "sha256:72687b62a54d9d9e3fb85e7a37ea67f0e803aaa31be700e61d2f3742a5683917"},
+    {file = "debugpy-1.6.6-cp37-cp37m-macosx_10_15_x86_64.whl", hash = "sha256:78739f77c58048ec006e2b3eb2e0cd5a06d5f48c915e2fc7911a337354508110"},
+    {file = "debugpy-1.6.6-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:23c29e40e39ad7d869d408ded414f6d46d82f8a93b5857ac3ac1e915893139ca"},
+    {file = "debugpy-1.6.6-cp37-cp37m-win32.whl", hash = "sha256:7aa7e103610e5867d19a7d069e02e72eb2b3045b124d051cfd1538f1d8832d1b"},
+    {file = "debugpy-1.6.6-cp37-cp37m-win_amd64.whl", hash = "sha256:f6383c29e796203a0bba74a250615ad262c4279d398e89d895a69d3069498305"},
+    {file = "debugpy-1.6.6-cp38-cp38-macosx_10_15_x86_64.whl", hash = "sha256:23363e6d2a04d726bbc1400bd4e9898d54419b36b2cdf7020e3e215e1dcd0f8e"},
+    {file = "debugpy-1.6.6-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:9b5d1b13d7c7bf5d7cf700e33c0b8ddb7baf030fcf502f76fc061ddd9405d16c"},
+    {file = "debugpy-1.6.6-cp38-cp38-win32.whl", hash = "sha256:70ab53918fd907a3ade01909b3ed783287ede362c80c75f41e79596d5ccacd32"},
+    {file = "debugpy-1.6.6-cp38-cp38-win_amd64.whl", hash = "sha256:c05349890804d846eca32ce0623ab66c06f8800db881af7a876dc073ac1c2225"},
+    {file = "debugpy-1.6.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:a771739902b1ae22a120dbbb6bd91b2cae6696c0e318b5007c5348519a4211c6"},
+    {file = "debugpy-1.6.6-cp39-cp39-win32.whl", hash = "sha256:549ae0cb2d34fc09d1675f9b01942499751d174381b6082279cf19cdb3c47cbe"},
+    {file = "debugpy-1.6.6-cp39-cp39-win_amd64.whl", hash = "sha256:de4a045fbf388e120bb6ec66501458d3134f4729faed26ff95de52a754abddb1"},
+    {file = "debugpy-1.6.6-py2.py3-none-any.whl", hash = "sha256:be596b44448aac14eb3614248c91586e2bc1728e020e82ef3197189aae556115"},
+    {file = "debugpy-1.6.6.zip", hash = "sha256:b9c2130e1c632540fbf9c2c88341493797ddf58016e7cba02e311de9b0a96b67"},
 ]
 
 [[package]]
@@ -759,27 +758,28 @@ files = [
 
 [[package]]
 name = "ipykernel"
-version = "6.20.2"
+version = "6.21.3"
 description = "IPython Kernel for Jupyter"
 category = "dev"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "ipykernel-6.20.2-py3-none-any.whl", hash = "sha256:5d0675d5f48bf6a95fd517d7b70bcb3b2c5631b2069949b5c2d6e1d7477fb5a0"},
-    {file = "ipykernel-6.20.2.tar.gz", hash = "sha256:1893c5b847033cd7a58f6843b04a9349ffb1031bc6588401cadc9adb58da428e"},
+    {file = "ipykernel-6.21.3-py3-none-any.whl", hash = "sha256:24ebd9715e317c185e37156ab3a87382410185230dde7aeffce389d6c7d4428a"},
+    {file = "ipykernel-6.21.3.tar.gz", hash = "sha256:c8ff581905d70e7299bc1473a2f7c113bec1744fb3746d58e5b4b93bd8ee7001"},
 ]
 
 [package.dependencies]
 appnope = {version = "*", markers = "platform_system == \"Darwin\""}
 comm = ">=0.1.1"
-debugpy = ">=1.0"
+debugpy = ">=1.6.5"
 ipython = ">=7.23.1"
 jupyter-client = ">=6.1.12"
+jupyter-core = ">=4.12,<5.0.0 || >=5.1.0"
 matplotlib-inline = ">=0.1"
 nest-asyncio = "*"
 packaging = "*"
 psutil = "*"
-pyzmq = ">=17"
+pyzmq = ">=20"
 tornado = ">=6.1"
 traitlets = ">=5.4.0"
 
@@ -2918,4 +2918,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.9.7 || >3.9.7,<4.0"
-content-hash = "a3c6e36a26fa74e367be0c6a5edf8f53196d61d88571436aab285b81b2af51c2"
+content-hash = "9484ec8a9fdfc952e575de94c6ecf574807d1d3acffce95449e21fe795885d58"
