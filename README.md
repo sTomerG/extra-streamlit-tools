@@ -10,6 +10,8 @@
 
 ## Usage
 
+See [ReadTheDocs](https://extra-streamlit-tools.readthedocs.io/en/latest/) for its official documentation.
+
 ```
 import extra_streamlit_tools as est
 
