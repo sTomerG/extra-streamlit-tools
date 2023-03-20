@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "my-package-tomergabay"
+name = "extra-streamlit-tools"
 version = "0.1.0"
-description = "Template for a professional (open source) Python package."
+description = "Extra tools to use for streamlit applications"
 authors = ["Tomer Gabay <tomergabay001@gmail.com>"]
 readme = "README.md"
-packages = [{include = "my_package", from = "src"}]
+packages = [{include = "extra_streamlit_tools", from = "src"}]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 
 
 [tool.poetry.group.dev.dependencies]

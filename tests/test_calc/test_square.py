@@ -1,7 +1,7 @@
 import hypothesis.strategies as st
 import pytest
 from hypothesis import given
-from my_package.calc import square
+from extra_streamlit_tools.calc import square
 
 
 @given(x=st.one_of(st.integers(), st.floats(allow_nan=False)))

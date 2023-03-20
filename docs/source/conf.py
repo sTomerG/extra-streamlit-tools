@@ -11,7 +11,7 @@
 
 from pathlib import Path
 
-project = "my-project"
+project = "extra-streamlit-tools"
 copyright = "2022, Tomer Gabay"
 author = "Tomer Gabay"
 release = "0.1.0"
