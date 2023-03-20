@@ -9,6 +9,7 @@ packages = [{include = "extra_streamlit_tools", from = "src"}]
 [tool.poetry.dependencies]
 python = ">=3.9,<3.9.7 || >3.9.7,<4.0"
 streamlit = "^1.20.0"
+furo = "^2022.12.7"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -30,7 +31,7 @@ myst-parser = "^0.18.1"
 sphinx-autobuild = "^2021.3.14"
 nbsphinx = "^0.8.9"
 sphinx-autoapi = "^2.0.0"
-furo = "^2022.12.7"
+furo = "2022.12.7"
 ipykernel = "^6.16.0"
 
 [tool.black]
