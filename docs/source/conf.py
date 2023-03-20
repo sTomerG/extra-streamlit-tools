@@ -22,7 +22,6 @@ release = "0.1.0"
 extensions = [
     "myst_parser",
     "sphinx.ext.duration",
-    "sphinx.ext.autosectionlabel",
     "sphinx.ext.autodoc",
     "sphinx.ext.napoleon",
     "autoapi.extension",
@@ -30,6 +29,11 @@ extensions = [
 ]
 autoapi_type = "python"
 autoapi_dirs = [f"{Path(__file__).parents[2]}/src"]
+autoapi_options = [
+    "members",
+    "undoc-members",
+    "show-inheritance",
+]
 
 templates_path = ["_templates"]
 exclude_patterns = []
@@ -40,3 +44,12 @@ exclude_patterns = []
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
+
+
+def should_skip_member(app, what, name, obj, skip, options):
+    exclude_modules = ["extra_streamlit_tools._logging"]
+    return name in exclude_modules
+
+
+def setup(app):
+    app.connect("autodoc-skip-member", should_skip_member)
