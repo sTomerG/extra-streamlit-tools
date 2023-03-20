@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "my-package-tomergabay"
+version = "0.1.0"
+description = "Template for a professional (open source) Python package."
+authors = ["Tomer Gabay <tomergabay001@gmail.com>"]
+readme = "README.md"
+packages = [{include = "my_package", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+pre-commit = "^2.20.0"
+
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.1.3"
+hypothesis = "^6.56.1"
+flake8 = "^5.0.4"
+
+
+[tool.poetry.group.doc.dependencies]
+Sphinx = "^5.2.3"
+myst-parser = "^0.18.1"
+sphinx-autobuild = "^2021.3.14"
+nbsphinx = "^0.8.9"
+sphinx-autoapi = "^2.0.0"
+sphinx-rtd-theme = "^1.0.0"
+ipykernel = "^6.16.0"
+
+[tool.black]
+line-length = 79
+exclude = '''
+/(
+\.git
+| \.hg
+| \.mypy_cache
+| \.tox
+| \.venv
+| _build
+| buck-out
+| build
+| dist
+| docs
+)/
+'''
+
+[tool.isort]
+profile = "black"
+known_third_party = ["hypothesis", "my_package", "pytest"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
