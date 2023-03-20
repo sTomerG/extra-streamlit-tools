@@ -10,9 +10,7 @@ def test_single_column():
 
 
 def test_multiple_columns():
-    df = pd.DataFrame(
-        {"col1": ["hello", "world"], "col2": ["python", "java"]}
-    )
+    df = pd.DataFrame({"col1": ["hello", "world"], "col2": ["python", "java"]})
     assert get_concat_columns(df, ["col1", "col2"], " ") == [
         "hello python",
         "world java",
@@ -25,9 +23,7 @@ def test_empty_dataframe():
 
 
 def test_join_with_dot():
-    df = pd.DataFrame(
-        {"col1": ["hello", "world"], "col2": ["python", "java"]}
-    )
+    df = pd.DataFrame({"col1": ["hello", "world"], "col2": ["python", "java"]})
     assert get_concat_columns(df, ["col1", "col2"], ".") == [
         "hello.python",
         "world.java",
@@ -35,9 +31,7 @@ def test_join_with_dot():
 
 
 def test_join_with_comma():
-    df = pd.DataFrame(
-        {"col1": ["hello", "world"], "col2": ["python", "java"]}
-    )
+    df = pd.DataFrame({"col1": ["hello", "world"], "col2": ["python", "java"]})
     assert get_concat_columns(df, ["col1", "col2"], ",") == [
         "hello,python",
         "world,java",
@@ -45,12 +39,9 @@ def test_join_with_comma():
 
 
 def test_non_string_columns():
-    df = pd.DataFrame(
-        {"col1": [1, 2, 3], "col2": [4, 5, 6]}
-    )
+    df = pd.DataFrame({"col1": [1, 2, 3], "col2": [4, 5, 6]})
     assert get_concat_columns(df, ["col1", "col2"], " ") == [
         "1 4",
         "2 5",
         "3 6",
     ]
-
