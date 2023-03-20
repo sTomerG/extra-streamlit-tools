@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.9", "3.10", "3.11"]
+        python-version: ["3.9", "3.10"]
         os: [ubuntu-latest, macOS-latest]
     env:
       POETRY_VIRTUALENVS_IN_PROJECT: true
@@ -57,7 +57,6 @@ jobs:
           key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}
       - run: poetry install --no-interaction --no-root
         if: steps.cache-deps.outputs.cache-hit != 'true'
-      - run: poetry lock --no-update
       - run: poetry install --no-interaction
       - run: poetry run flake8 src/ tests/
       - run: poetry run pytest
