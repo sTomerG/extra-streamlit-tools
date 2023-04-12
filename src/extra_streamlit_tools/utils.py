@@ -3,14 +3,17 @@ import streamlit as st
 from typing import Any
 
 
-def clear_cache() -> None:
+def clear_cache(keep_cols: list = []) -> None:
     """
     Resets the Streamlit cache.
     """
     logger.debug("Clearing cache")
     for key in st.session_state.keys():
-        logger.debug(f"Deleting key: {key}")
-        del st.session_state[key]
+        if key not in keep_cols:
+            logger.debug(f"Deleting key: {key}")
+            del st.session_state[key]
+        else:
+            logger.debug(f"Keeping key: {key}")
 
 
 def init_session_keys(key_value_pairs: dict[str, Any]) -> None:
