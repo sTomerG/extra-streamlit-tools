@@ -1,15 +1,21 @@
 from extra_streamlit_tools._logging import logging as logger
 import streamlit as st
-from typing import Any
+from typing import Any, Optional
 
 
-def clear_cache(keep_cols: list = []) -> None:
+def clear_cache(keep_keys: Optional[list[str]] = None) -> None:
     """
     Resets the Streamlit cache.
+
+    Parameters
+    ----------
+        keep_keys:Optional[list[str]]
+            Keys to not be cleared from cache
     """
+
     logger.debug("Clearing cache")
     for key in st.session_state.keys():
-        if key not in keep_cols:
+        if keep_keys is None or key not in keep_keys:
             logger.debug(f"Deleting key: {key}")
             del st.session_state[key]
         else:
